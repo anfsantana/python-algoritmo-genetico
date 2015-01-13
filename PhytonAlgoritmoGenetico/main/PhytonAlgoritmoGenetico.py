@@ -3,7 +3,7 @@ from Cromossomo import Cromossomo
 from Candidato import Candidato
 
 
-#Simulando testando preenchimento e listagem
+#Simulando preenchimento e listagem
 
 candidato = Candidato([])
 
