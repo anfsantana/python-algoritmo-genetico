@@ -3,5 +3,7 @@ from Cromossomo import Cromossomo
 from Gene import Gene
 funcGenetico = Genetico()
 
+quantCandidatos = input("Digite a quantidade de candidatos para serem gerados: ")
 
-funcGenetico.listarCandidatos()
+candidatos = funcGenetico.gerarCandidatos(int(quantCandidatos))
+funcGenetico.listarCandidatos(candidatos.listaCandidatos)
