@@ -6,7 +6,7 @@
     <ProjectGuid>4fc5aa14-0626-40db-99b8-8340a7d9f012</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>main\PhytonAlgoritmoGenetico.py</StartupFile>
-    <SearchPath>classes\</SearchPath>
+    <SearchPath>classes\;funcoes\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PhytonAlgoritmoGenetico</Name>
@@ -30,9 +30,11 @@
     <Compile Include="classes\Cromossomo.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="funcoes\Genetico.py" />
     <Compile Include="main\PhytonAlgoritmoGenetico.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="funcoes\" />
     <Folder Include="main\" />
     <Folder Include="classes\" />
   </ItemGroup>
