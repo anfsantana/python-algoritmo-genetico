@@ -5,5 +5,5 @@ funcGenetico = Genetico()
 
 quantCandidatos = input("Digite a quantidade de candidatos para serem gerados: ")
 
-candidatos = funcGenetico.gerarCandidatos(int(quantCandidatos))
-funcGenetico.listarCandidatos(candidatos.listaCandidatos)
+candidatos = Genetico().gerarCandidatos(int(quantCandidatos))
+Genetico().listarCandidatos(candidatos.listaCandidatos)
