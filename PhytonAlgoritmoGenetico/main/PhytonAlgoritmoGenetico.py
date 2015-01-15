@@ -8,19 +8,19 @@ import os
 funcGenetico = Genetico()
 totalGene = 7
 #Ver quest√µes dos acentos
-print(" SUGEST√ÉO DE COMPET√äNCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
+print(" SUGEST√O DE COMPET NCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
 
-totalIndividuos = input("\n 1. Insira a quantidade de candidatos para serem gerados aleat√≥riamente: ")
-valorEsperado =   input("\n 2. Insira o valor m√≠nimo para a sele√ß√£o de candidatos: ")
-quantidadeIndividuos = input("\n 3. Insira a quantidade m√°xima de candidatos que se deseja obter: ")
+totalIndividuos = input("\n 1. Insira a quantidade de candidatos para serem gerados aleatÛriamente: ")
+valorEsperado =   input("\n 2. Insira o valor mÌnimo para a seleÁ„o de candidatos: ")
+quantidadeIndividuos = input("\n 3. Insira a quantidade m·xima de candidatos que se deseja obter: ")
 
 os.system("cls")
-print(" SUGEST√ÉO DE COMPET√äNCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
-print("\n ===================== CONFIGURA√á√ïES DO PROGRAMA ===================== ")
+
+print("\n ===================== CONFIGURA«’ES DO PROGRAMA ===================== ")
 print("\n Total de candidatos: {0} ".format(totalIndividuos))
-print("\n Valor m√≠nimo para a sele√ß√£o de candidatos: {0} ".format(valorEsperado))
-print("\n Quantidade m√≠nima de candidatos que se deseja obter : {0}".format(quantidadeIndividuos))
-print("\n [Padr√£o/Programa] Total de crit√©rios de avalia√ß√£o : {0} ".format(totalGene));
+print("\n Valor mÌnimo para a seleÁ„o de candidatos: {0} ".format(valorEsperado))
+print("\n Quantidade mÌnima de candidatos que se deseja obter : {0}".format(quantidadeIndividuos))
+print("\n [Padr„o/Programa] Total de critÈrios de avaliaÁ„o : {0} ".format(totalGene));
 print("\n ===================================================================== ")
 
 print (" \n\n Gerando candidatos ... \n\n")
@@ -32,6 +32,6 @@ print (" \n\n Avaliando candidatos ... \n\n")
 time.sleep(5)
 Genetico().avaliar(candidatos.listaCandidatos)
 
-#Descomentar e continuar fazendo ... Sen√£o fica em loop infinito.
+#Descomentar e continuar fazendo ... Sen„o fica em loop infinito.
 #while (Genetico().aplicarCondicao(candidatos.listaCandidatos, int(valorEsperado), int(quantidadeIndividuos))):
 #       Genetico().selecionar(candidatos.listaCandidatos, int(totalIndividuos), int(totalGene), int(quantidadeIndividuos)) 
