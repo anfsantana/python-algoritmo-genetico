@@ -59,7 +59,7 @@ class Genetico:
         except Exception as ex:
             print("Ocorreu o erro: {0} ".format(ex.args))
 
-       @staticmethod    
+    @staticmethod    
     def aplicarCondicao(populacao, valorEsperado, quantidadeIndividuos):
         sum = 0
         contSatisf = 0
