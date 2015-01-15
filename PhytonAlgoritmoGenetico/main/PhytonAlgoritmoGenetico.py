@@ -15,7 +15,7 @@ valorEsperado =   input("\n 2. Insira o valor mínimo para a seleção de candidato
 quantidadeIndividuos = input("\n 3. Insira a quantidade máxima de candidatos que se deseja obter: ")
 
 os.system("cls")
-
+print(" SUGESTÃO DE COMPETÊNCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
 print("\n ===================== CONFIGURAÇÕES DO PROGRAMA ===================== ")
 print("\n Total de candidatos: {0} ".format(totalIndividuos))
 print("\n Valor mínimo para a seleção de candidatos: {0} ".format(valorEsperado))
