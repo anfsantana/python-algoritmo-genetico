@@ -5,7 +5,6 @@ from Gene import Gene
 import time
 import os
 
-funcGenetico = Genetico()
 totalGene = 7
 #Ver questões dos acentos
 print(" SUGESTÃO DE COMPETÊNCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
@@ -32,4 +31,6 @@ print (" \n\n Avaliando candidatos ... \n\n")
 time.sleep(5)
 Genetico().avaliar(candidatos.listaCandidatos)
 
-#while ()
+#Descomentar e continuar fazendo ... Senão fica em loop infinito.
+#while (Genetico().aplicarCondicao(candidatos.listaCandidatos, int(valorEsperado), int(quantidadeIndividuos))):
+#       Genetico().selecionar(candidatos.listaCandidatos, int(totalIndividuos), int(totalGene), int(quantidadeIndividuos))
