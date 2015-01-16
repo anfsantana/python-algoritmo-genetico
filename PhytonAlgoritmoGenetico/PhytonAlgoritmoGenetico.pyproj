@@ -6,7 +6,7 @@
     <ProjectGuid>4fc5aa14-0626-40db-99b8-8340a7d9f012</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>main\PhytonAlgoritmoGenetico.py</StartupFile>
-    <SearchPath>classes\;funcoes\</SearchPath>
+    <SearchPath>classes\;funcoes\;utilitarios\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PhytonAlgoritmoGenetico</Name>
@@ -32,11 +32,15 @@
     </Compile>
     <Compile Include="funcoes\Genetico.py" />
     <Compile Include="main\PhytonAlgoritmoGenetico.py" />
+    <Compile Include="utilitarios\Mensagens.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="funcoes\" />
     <Folder Include="main\" />
     <Folder Include="classes\" />
+    <Folder Include="utilitarios\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

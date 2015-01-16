@@ -1,33 +1,34 @@
-# -*- coding: cp1252 -*- 
 from Genetico import Genetico
 from Cromossomo import Cromossomo
 from Gene import Gene
+from Mensagens import Mensagens
 import time
 import os
 
+msg = Mensagens()
 totalGene = 7
-#Ver questões dos acentos
-print(" SUGESTÃO DE COMPETÊNCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
 
-totalIndividuos = input("\n 1. Insira a quantidade de candidatos para serem gerados aleatóriamente: ")
-valorEsperado =   input("\n 2. Insira o valor mínimo para a seleção de candidatos: ")
-quantidadeIndividuos = input("\n 3. Insira a quantidade máxima de candidatos que se deseja obter: ")
+print(msg.mensagem['nome.programa'])
+
+totalIndividuos = input(msg.mensagem['insira.quantidade.individuos'])
+valorEsperado =   input(msg.mensagem['inserir.valor.minimo.individuos'])
+quantidadeIndividuos = input(msg.mensagem['inserir.quantidade.maxima.obter.individuos'])
 
 os.system("cls")
-print(" SUGESTÃO DE COMPETÊNCIAS \n PARA O CARGO DE [Coordenador de Recursos Humanos]")
-print("\n ===================== CONFIGURAÇÕES DO PROGRAMA ===================== ")
-print("\n Total de candidatos: {0} ".format(totalIndividuos))
-print("\n Valor mínimo para a seleção de candidatos: {0} ".format(valorEsperado))
-print("\n Quantidade mínima de candidatos que se deseja obter : {0}".format(quantidadeIndividuos))
-print("\n [Padrão/Programa] Total de critérios de avaliação : {0} ".format(totalGene));
-print("\n ===================================================================== ")
+print(msg.mensagem['nome.programa'])
+print(msg.mensagem['cabecalho.configuracoes.programa'])
+print(msg.mensagem['total.individuos'].format(totalIndividuos))
+print(msg.mensagem['valor.minimo.selecao.individuos'].format(valorEsperado))
+print(msg.mensagem['quantidade.minima.individuos'].format(quantidadeIndividuos))
+print(msg.mensagem['total.criterio.de.avaliacao.padrao'].format(totalGene));
+print(msg.mensagem['rodape.configuracoes.programa'])
 
-print (" \n\n Gerando candidatos ... \n\n")
+print (msg.mensagem['mensagem.gerando.candidatos'])
 time.sleep(5)
 candidatos = Genetico().gerarPopulacao(int(totalIndividuos), int(totalGene))
 Genetico().listarCandidatos(candidatos.listaCandidatos)
 
-print (" \n\n Avaliando candidatos ... \n\n")
+print (msg.mensagem['mensagem.avaliando.candidatos'])
 time.sleep(5)
 Genetico().avaliar(candidatos.listaCandidatos)
 
