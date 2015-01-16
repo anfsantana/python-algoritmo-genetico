@@ -4,7 +4,7 @@ class Cromossomo(object):
       self.__nota = int()
       self.__satisfazCondicao = False
       self.__selecionado = False
-
+      
     @property
     def avaliacao(self):
         return self.__nota
@@ -36,6 +36,3 @@ class Cromossomo(object):
     @selecionado.setter
     def selecionado(self, selecionado):
         self.__selecionado = selecionado
-    
-
-
