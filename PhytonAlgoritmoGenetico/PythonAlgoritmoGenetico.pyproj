@@ -4,12 +4,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4fc5aa14-0626-40db-99b8-8340a7d9f012</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>main\PhytonAlgoritmoGenetico.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>main\PythonAlgoritmoGenetico.py</StartupFile>
     <SearchPath>classes\;funcoes\;utilitarios\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PhytonAlgoritmoGenetico</Name>
+    <Name>PythonAlgoritmoGenetico</Name>
     <RootNamespace>PhytonAlgoritmoGenetico</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -31,7 +32,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="funcoes\Genetico.py" />
-    <Compile Include="main\PhytonAlgoritmoGenetico.py" />
+    <Compile Include="main\PythonAlgoritmoGenetico.py" />
     <Compile Include="utilitarios\Mensagens.py">
       <SubType>Code</SubType>
     </Compile>
